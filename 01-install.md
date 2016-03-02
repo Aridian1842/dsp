@@ -52,7 +52,7 @@ Python 2 because that's what I already had installed
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-'python --version'
+`python --version`
 
  
 
