@@ -31,13 +31,13 @@ to the file on the right.
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  lists directory contents
-`ls -a`  doesn't ignore entries starting with .
-`ls -l`  uses a long listing format
-`ls -lh`  print sizes in human readable format
-`ls -lah`  print sizes in human readable format and doesn't ignore entries starting with .
-`ls -t`  sorts by modification time, newest first
-`ls -Glp`  long listing that doesn't print group names and appends `/` to directories
+- `ls`  lists directory contents
+- `ls -a`  doesn't ignore entries starting with .
+- `ls -l`  uses a long listing format
+- `ls -lh`  print sizes in human readable format
+- `ls -lah`  print sizes in human readable format and doesn't ignore entries - starting with .
+- `ls -t`  sorts by modification time, newest first
+- `ls -Glp`  long listing that doesn't print group names and appends `/` to directories
 
 ---
 
