@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+nano becauase I am most comfortable with it due to past experience using it.
 
 --
 
@@ -67,6 +67,22 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Sublime Text 3 because I am most comfortable with it, it's widely used, it's very customizable, and there's a great ecosystem of plugins. 
+
+Keyboard shortcuts I use a lot:
+- `⌘ + /`	Comment/un-comment current line
+- `⌘ + ⇧ + P`	Command Palette
+- `⌘ + ⌃ + ↑` Move line/selection up
+- `⌘ + ⌃ + ↓`   Move line/selection down
+- `⌘ + ⌥ + /` Block comment current selection
+
+
+Customizations:
+- Installed linters (SublimteLinters: pylint, jshint, json)
+- MarkdownEditing
+- CodeFormatter
+- Emmet
+- BracketHighlighter
+- Sass
 
  
