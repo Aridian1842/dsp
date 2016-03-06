@@ -84,5 +84,6 @@ Customizations:
 - Emmet
 - BracketHighlighter
 - Sass
+- TrailingSpaces
 
  

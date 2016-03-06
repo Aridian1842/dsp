@@ -1,6 +1,8 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
-
+"""
+Answers to string function pre-work
+"""
 
 def donuts(count):
     """
@@ -18,7 +20,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    num = 'many'
+    if (count < 10) and (count >= 0):
+        num = str(count)
+    return 'Number of dunuts: ' + num
 
 
 def both_ends(s):
@@ -37,7 +42,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    ret_s = ''
+    str_len = len(s)
+    if str_len > 1:
+        ret_s = s[:2] + s[str_len-2:str_len]
+    return ret_s
 
 
 def fix_start(s):
@@ -56,7 +65,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_chr = s[0]
+    s = s.replace(first_chr, '*')
+    s = first_chr + s[1:]
+    return s
 
 
 def mix_up(a, b):
@@ -74,7 +86,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    a_first_chrs = a[0:2]
+    b_first_chrs = b[0:2]
+    a = b_first_chrs+a[2:len(a)]
+    b = a_first_chrs+b[2:len(b)]
+    return a + ' ' + b
 
 
 def verbing(s):
@@ -91,7 +107,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    length = len(s)
+    if length >= 3:
+        if s[length-3:length] == 'ing':
+            s += 'ly'
+        else:
+            s += 'ing'
+    return s
 
 
 def not_bad(s):
@@ -111,7 +133,11 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    not_loc = s.find('not')
+    bad_loc = s.find('bad')
+    if not_loc > -1 and (bad_loc > not_loc):
+        s = s[:not_loc] + 'good' + s[bad_loc+3:]
+    return s
 
 
 def front_back(a, b):
@@ -130,4 +156,24 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_len = len(a)
+    b_len = len(b)
+    a_correction = 1
+    b_correction = 1
+
+    if a_len % 2 == 0:
+        a_correction = 0
+
+    if b_len % 2 == 0:
+        b_correction = 0
+
+    a_cut = a_len/2 + a_correction
+    b_cut = b_len/2 + b_correction
+
+    a_front = a[:a_cut]
+    a_back = a[a_cut:]
+
+    b_front = b[:b_cut]
+    b_back = b[b_cut:]
+
+    return a_front + b_front + a_back + b_back
