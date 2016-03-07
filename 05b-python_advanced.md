@@ -21,6 +21,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 9 degrees (8 if you don't include the person with no listed degree):
 
+```
 PhD     31
 ScD      6
 MPH      2
@@ -30,16 +31,17 @@ JD       1
 MA       1
 None     1
 MD       1
-
+```
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
 3 titles:
 
+```
 Professor of Biostatistics              13
 Associate Professor of Biostatistics    12
 Assistant Professor of Biostatistics    12
-
+```
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
