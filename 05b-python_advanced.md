@@ -1,10 +1,10 @@
-## Advanced Python    
+## Advanced Python
 
-###Regular Expressions, Dictionary, Writing to CSV File  
+###Regular Expressions, Dictionary, Writing to CSV File
 
 This question has multiple parts, and will take **20+ hours** to complete, depending on your python proficiency level.  Knowing these skills will be extremely beneficial during the first few weeks of the bootcamp.
 
-For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference. 
+For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference.
 
 ---
 
@@ -12,29 +12,48 @@ The data file represents the [Biostats Faculty List at University of Pennsylvani
 
 This data is available in this file:  [faculty.csv](python/faculty.csv)
 
---- 
+---
 
-###Part I - Regular Expressions  
+###Part I - Regular Expressions
 
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+9 degrees (8 if you don't include the person with no listed degree):
+
+PhD     31
+ScD      6
+MPH      2
+MS       2
+BSEd     1
+JD       1
+MA       1
+None     1
+MD       1
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+3 titles:
+
+Professor of Biostatistics              13
+Associate Professor of Biostatistics    12
+Assistant Professor of Biostatistics    12
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
->> REPLACE THIS WITH YOUR RESPONSE
+['bellamys@mail.med.upenn.edu', 'warren@upenn.edu', 'bryanma@upenn.edu', 'jinboche@upenn.edu', 'sellenbe@upenn.edu', 'jellenbe@mail.med.upenn.edu', 'ruifeng@upenn.edu', 'bcfrench@mail.med.upenn.edu', 'pgimotty@upenn.edu', 'wguo@mail.med.upenn.edu', 'hsu9@mail.med.upenn.edu', 'rhubb@mail.med.upenn.edu', 'whwang@mail.med.upenn.edu', 'mjoffe@mail.med.upenn.edu', 'jrlandis@mail.med.upenn.edu', 'liy3@email.chop.edu', 'mingyao@mail.med.upenn.edu', 'hongzhe@upenn.edu', 'rlocalio@upenn.edu', 'nanditam@mail.med.upenn.edu', 'knashawn@mail.med.upenn.edu', 'propert@mail.med.upenn.edu', 'mputt@mail.med.upenn.edu', 'sratclif@upenn.edu', 'michross@upenn.edu', 'jaroy@mail.med.upenn.edu', 'msammel@cceb.med.upenn.edu', 'shawp@upenn.edu', 'rshi@mail.med.upenn.edu', 'hshou@mail.med.upenn.edu', 'jshults@mail.med.upenn.edu', 'alisaste@mail.med.upenn.edu', 'atroxel@mail.med.upenn.edu', 'rxiao@mail.med.upenn.edu', 'sxie@mail.med.upenn.edu', 'dxie@upenn.edu', 'weiyang@mail.med.upenn.edu']
 
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> REPLACE THIS WITH YOUR RESPONSE
+4 unique email domains:
+
+mail.med.upenn.edu    23
+upenn.edu             12
+cceb.med.upenn.edu     1
+email.chop.edu         1
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
@@ -74,7 +93,14 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+```
+Putt
+['PhD ScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu']
+Feng
+['Ph.D', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu']
+Bilker
+['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
+```
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -89,17 +115,31 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+```
+('Yimei', 'Li')
+['Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']
+('Hongzhe', 'Li')
+['Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu']
+('Knashawn', 'Morales')
+['Sc.D.', 'Associate Professor of Biostatistics', 'knashawn@mail.med.upenn.edu']
+```
 
-####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
+####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.
 
->> REPLACE THIS WITH YOUR RESPONSE
+```
+('Scarlett', 'Bellamy')
+['Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']
+('Warren', 'Bilker')
+['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
+('Matthew', 'Bryan')
+['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
+```
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
---- 
+---
 
-If you're all done and looking for an extra challenge, then try the below problem:  
+If you're all done and looking for an extra challenge, then try the below problem:
 
 ### [Markov](python/markov.py) (Optional)
 
