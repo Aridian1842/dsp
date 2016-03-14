@@ -67,7 +67,7 @@ nano becauase I am most comfortable with it due to past experience using it.
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-Sublime Text 3 because I am most comfortable with it, it's widely used, it's very customizable, and there's a great ecosystem of plugins. 
+Sublime Text 3 because I am most comfortable with it, it's widely used, it's very customizable, and there's a great ecosystem of plugins.
 
 Keyboard shortcuts I use a lot:
 - `⌘ + /`	Comment/un-comment current line
@@ -86,4 +86,4 @@ Customizations:
 - Sass
 - TrailingSpaces
 
- 
+
