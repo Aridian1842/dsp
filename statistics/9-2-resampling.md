@@ -116,9 +116,6 @@ class DiffMeansResample(DiffMeansPermute):
 
         returns: simulated data
         """
-        group1, group2 = self.data
-        count = 0
-
         sample1 = np.random.choice(self.pool, self.n, replace=True)
         sample2 = np.random.choice(self.pool, self.m, replace=True)
 
