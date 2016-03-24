@@ -119,8 +119,6 @@ class DiffMeansResample(DiffMeansPermute):
         group1, group2 = self.data
         count = 0
 
-        #sample1 = thinkstats2.Resample(group1)
-        #sample2 = thinkstats2.Resample(group2)
         sample1 = np.random.choice(self.pool, self.n, replace=True)
         sample2 = np.random.choice(self.pool, self.m, replace=True)
 
